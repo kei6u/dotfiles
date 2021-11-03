@@ -1,0 +1,3 @@
+[kubernetes]
+format = 'on [$context \($namespace\)](bold #3970e4) '
+disabled = false
