@@ -4,7 +4,7 @@
 	logline = log --pretty=oneline --abbrev-commit -n 20
 	reset-soft = !git reset --soft HEAD^$1
 	reset-hard = !git reset --hard HEAD^$1
-    switch-default = "!f(){ \
+	switch-default = "!f(){ \
 		local d; \
 		d=$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'); \
 		git switch $d; \
