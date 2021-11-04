@@ -6,6 +6,8 @@
 # Set up git
 brew install git
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
+brew install tig
+ln -sf ~/dotfiles/.tigrc ~/.tigrc
 
 brew cask install iterm2
 brew install --cask visual-studio-code
