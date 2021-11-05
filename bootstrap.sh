@@ -23,4 +23,5 @@ ln -sf ~/dotfiles/.tigrc ~/.tigrc
 brew install fzf
 
 brew install go
+brew install dep
 mkdir -p go/src/github.com/kei6u
