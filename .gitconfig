@@ -12,5 +12,7 @@
 	}; f"
 	switch-local = !git switch $(git branch | fzf)
 	switch-remote = !git fetch --all && git switch -t $(git branch -r | fzf)
+	push-curr = !git push origin $(git branch --show-current)
+	fpush-curr = !git push --force-with-lease origin $(git branch --show-current)
 [user]
     name = kei6u
