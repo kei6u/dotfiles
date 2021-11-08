@@ -25,3 +25,6 @@ brew install fzf
 brew install go
 brew install dep
 mkdir -p go/src/github.com/kei6u
+
+brew install python
+brew install pip
