@@ -11,16 +11,12 @@ brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 
-brew install starship
-
 brew cask install iterm2
 brew install --cask visual-studio-code
 brew install --cask docker
 
-brew install tig
+brew install tig starship fzf jq bat
 ln -sf ~/dotfiles/.tigrc ~/.tigrc
-
-brew install fzf
 
 brew install go
 brew install dep
