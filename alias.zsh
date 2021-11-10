@@ -1,6 +1,12 @@
 ### Kubernetes
 alias k='kubectl'
 
+### gcloud
+alias gcloud='~/google-cloud-sdk/bin/gcloud'
+
+### Python
+alias python='python3'
+
 ### fzf
 
 # h find previous commands in history and repeat it.
