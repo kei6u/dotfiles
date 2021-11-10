@@ -1,5 +1,4 @@
 [alias]
-	commit-all = !git add -A . && git commit -m
 	discard = !git add . && git stash && git stash drop stash@{0}
 	logline = log --pretty=oneline --abbrev-commit -n 20
 	reset-soft = !git reset --soft HEAD^$1
