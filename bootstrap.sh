@@ -25,4 +25,4 @@ mkdir -p go/src/github.com/kei6u
 brew install python
 brew install pip
 
-brew install kubectl kubectx
+brew install kubectl kubectx helm
