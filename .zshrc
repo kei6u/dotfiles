@@ -11,6 +11,11 @@ if [ -d $ZSHHOME -a -r $ZSHHOME -a \
     done
 fi
 
+# Go
+export GOPATH=~/go
+export GOBIN=${GOPATH}/bin
+export PATH="$PATH:$GOBIN"
+
 # Activate starship
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/dotfiles/starship.toml
