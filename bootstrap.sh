@@ -26,5 +26,7 @@ brew install python
 brew install pip
 
 brew install kubectl kubectx helm
+brew install hidetatz/tap/kubecolor
+
 brew install --cask docker
 brew install --cask postman

@@ -1,6 +1,3 @@
-### Kubernetes
-alias k='kubectl'
-
 ### gcloud
 alias gcloud='~/google-cloud-sdk/bin/gcloud'
 

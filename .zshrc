@@ -1,3 +1,6 @@
+autoload -Uz compinit
+compinit
+
 # Load `.zsh` files
 ZSHHOME="${HOME}/dotfiles"
 if [ -d $ZSHHOME -a -r $ZSHHOME -a \
@@ -15,3 +18,9 @@ export STARSHIP_CONFIG=~/dotfiles/starship.toml
 # Activate zsh plugins
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# kubectl
+source <(kubectl completion zsh)
+alias kubectl="kubecolor"
+alias k="kubectl"
+compdef kubecolor=kubectl
