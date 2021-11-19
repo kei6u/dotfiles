@@ -4,6 +4,16 @@ alias gcloud='~/google-cloud-sdk/bin/gcloud'
 ### Python
 alias python='python3'
 
+### Kubernetes
+kurl() {
+  kubectl run kurl --rm --tty -i --restart='Never' --namespace $N --image curlimages/curl --command -- sh
+}
+
+kpsql() {
+  kubectl run kpsql --rm --tty -i --restart='Never' --namespace $N --image bitnami/postgresql --command -- /bin/bash
+}
+
+
 ### fzf
 
 # h find previous commands in history and repeat it.
