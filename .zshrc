@@ -29,3 +29,4 @@ source <(kubectl completion zsh)
 alias kubectl="kubecolor"
 alias k="kubectl"
 compdef kubecolor=kubectl
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
