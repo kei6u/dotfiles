@@ -4,6 +4,11 @@ alias gcloud='~/google-cloud-sdk/bin/gcloud'
 ### Python
 alias python='python3'
 
+### Docker
+alias d='docker'
+alias drmall='docker rm -f $(docker ps -a -q)'
+dbash(){ docker exec -it $(docker ps | tail -n +2 | fzf | awk '{print $1}') bash; }
+
 ### Kubernetes
 kurl() {
   kubectl run kurl --rm --tty -i --restart='Never' --namespace $N --image curlimages/curl --command -- sh
@@ -12,7 +17,6 @@ kurl() {
 kpsql() {
   kubectl run kpsql --rm --tty -i --restart='Never' --namespace $N --image bitnami/postgresql --command -- /bin/bash
 }
-
 
 ### fzf
 
