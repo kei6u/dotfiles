@@ -8,6 +8,7 @@ alias python='python3'
 alias d='docker'
 alias drmall='docker rm -f $(docker ps -a -q)'
 dbash(){ docker exec -it $(docker ps | tail -n +2 | fzf | awk '{print $1}') bash; }
+dlogs(){ docker logs -f $(docker ps | tail -n +2 | fzf | awk '{print $1}'); }
 
 ### Kubernetes
 kurl() {
