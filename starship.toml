@@ -1,3 +1,9 @@
 [kubernetes]
-format = 'on [$context \($namespace\)](bold #3970e4) '
+format = '[$context](bold #3970e4) '
 disabled = false
+
+[aws]
+disabled = true
+
+[gcloud]
+disabled = true
