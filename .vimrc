@@ -15,6 +15,7 @@ set shiftwidth=2
 set vb t_vb=
 set novisualbell
 set clipboard+=unnamed
+set cursorline
 
 syntax on
 colorscheme desert
