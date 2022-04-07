@@ -1,5 +1,6 @@
 call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 set tabstop=2
