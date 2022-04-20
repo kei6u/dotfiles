@@ -15,6 +15,7 @@
 	fpush-curr = !git push --force-with-lease origin $(git branch --show-current)
 [user]
 	name = keisku
+	email = keisuke.umegaki.630@gmail.com
 [core]
 	editor = vim
 
