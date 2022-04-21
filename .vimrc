@@ -22,6 +22,7 @@ set vb t_vb=
 set novisualbell
 set clipboard+=unnamed
 set cursorline
+set laststatus=2
 
 syntax on
 colorscheme slate
